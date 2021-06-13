@@ -1,23 +1,23 @@
 # 说明
 
-imi 框架：https://www.imiphp.com
+* OVO开源私有化IM解决方案
 
-## 安装
+* 单聊 群聊 红包 语音消息电话
+  
+* 二进制协议高并发 消息必达
 
-### 方法一
+* 在 Swoole 的加持下，相比 php-fpm 请求响应能力，I/O密集型场景处理能力，有着本质上的提升。
 
-* git 拉取下本项目
+## 使用技术
+* PHP&Swoole&imi
+* mysql
+* redis
 
-* 在本项目目录中，执行命令：`composer update`
+## 版权信息
 
-### 方法二
+imi 遵循 木兰宽松许可证(Mulan PSL v2) 开源协议发布，并提供免费使用。
 
-* `composer create-project imiphp/project-http`
+##联系方式
+TG：ovoIm
 
-## 启动命令
-
-在本项目目录中，执行命令：`vendor/bin/imi server/start`
-
-## 权限
-
-`.runtime` 目录需要有可写权限
+QQ：10880665
