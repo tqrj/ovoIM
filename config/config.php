@@ -43,74 +43,74 @@ return [
     // 连接池配置
     'pools'    =>    [
         // 主数据库
-        // 'maindb'    =>    [
-        //     // 同步池子
-        //     'sync'    =>    [
-        //         'pool'    =>    [
-        //             'class'        =>    \Imi\Db\Pool\SyncDbPool::class,
-        //             'config'    =>    [
-        //                 'maxResources'    =>    10,
-        //                 'minResources'    =>    0,
-        //             ],
-        //         ],
-        //         'resource'    =>    [
-        //             'host'        => '127.0.0.1',
-        //             'port'        => 3306,
-        //             'username'    => 'root',
-        //             'password'    => 'root',
-        //             'database'    => 'database_name',
-        //             'charset'     => 'utf8mb4',
-        //         ],
-        //     ],
-        //     // 异步池子，worker进程使用
-        //     'async'    =>    [
-        //         'pool'    =>    [
-        //             'class'        =>    \Imi\Db\Pool\CoroutineDbPool::class,
-        //             'config'    =>    [
-        //                 'maxResources'    =>    10,
-        //                 'minResources'    =>    0,
-        //             ],
-        //         ],
-        //         'resource'    =>    [
-        //             'host'        => '127.0.0.1',
-        //             'port'        => 3306,
-        //             'username'    => 'root',
-        //             'password'    => 'root',
-        //             'database'    => 'database_name',
-        //             'charset'     => 'utf8mb4',
-        //         ],
-        //     ]
-        // ],
-        // 'redis'    =>    [
-        //     'sync'    =>    [
-        //         'pool'    =>    [
-        //             'class'        =>    \Imi\Redis\SyncRedisPool::class,
-        //             'config'    =>    [
-        //                 'maxResources'    =>    10,
-        //                 'minResources'    =>    0,
-        //             ],
-        //         ],
-        //         'resource'    =>    [
-        //             'host'      => '127.0.0.1',
-        //             'port'      => 6379,
-        //             'password'  => null,
-        //         ]
-        //     ],
-        //     'async'    =>    [
-        //         'pool'    =>    [
-        //             'class'        =>    \Imi\Redis\CoroutineRedisPool::class,
-        //             'config'    =>    [
-        //                 'maxResources'    =>    10,
-        //                 'minResources'    =>    0,
-        //             ],
-        //         ],
-        //         'resource'    =>    [
-        //             'host'      => '127.0.0.1',
-        //             'port'      => 6379,
-        //             'password'  => null,
-        //         ]
-        //     ],
-        // ],
+         'maindb'    =>    [
+             // 同步池子
+             'sync'    =>    [
+                 'pool'    =>    [
+                     'class'        =>    \Imi\Db\Pool\SyncDbPool::class,
+                     'config'    =>    [
+                         'maxResources'    =>    10,
+                         'minResources'    =>    0,
+                     ],
+                 ],
+                 'resource'    =>    [
+                     'host'        => '127.0.0.1',
+                     'port'        => 3306,
+                     'username'    => 'root',
+                     'password'    => 'h(zWYoVaf5sZ1',
+                     'database'    => 'ovo',
+                     'charset'     => 'utf8mb4',
+                 ],
+             ],
+             // 异步池子，worker进程使用
+             'async'    =>    [
+                 'pool'    =>    [
+                     'class'        =>    \Imi\Db\Pool\CoroutineDbPool::class,
+                     'config'    =>    [
+                         'maxResources'    =>    10,
+                         'minResources'    =>    0,
+                     ],
+                 ],
+                 'resource'    =>    [
+                     'host'        => '127.0.0.1',
+                     'port'        => 3306,
+                     'username'    => 'root',
+                     'password'    => 'h(zWYoVaf5sZ1',
+                     'database'    => 'ovo',
+                     'charset'     => 'utf8mb4',
+                 ],
+             ]
+         ],
+         'redis'    =>    [
+             'sync'    =>    [
+                 'pool'    =>    [
+                     'class'        =>    \Imi\Redis\SyncRedisPool::class,
+                     'config'    =>    [
+                         'maxResources'    =>    10,
+                         'minResources'    =>    0,
+                     ],
+                 ],
+                 'resource'    =>    [
+                     'host'      => '127.0.0.1',
+                     'port'      => 6379,
+                     'password'  => null,
+                 ]
+             ],
+             'async'    =>    [
+                 'pool'    =>    [
+                     'class'        =>    \Imi\Redis\CoroutineRedisPool::class,
+                     'config'    =>    [
+                         'maxResources'    =>    10,
+                         'minResources'    =>    0,
+                     ],
+                 ],
+                 'resource'    =>    [
+                     'host'      => '127.0.0.1',
+                     'port'      => 6379,
+                     'password'  => null,
+                 ]
+             ],
+         ],
     ],
 
     // 数据库配置
